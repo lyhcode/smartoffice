@@ -89,3 +89,14 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+// Spring Security Core
+grails.plugins.springsecurity.password.algorithm = 'SHA-512'
+
+
+// Added by the Spring Security Core plugin:
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'smartoffice.User'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'smartoffice.UserRole'
+grails.plugins.springsecurity.authority.className = 'smartoffice.Role'
+grails.plugins.springsecurity.requestMap.className = 'smartoffice.Requestmap'
+grails.plugins.springsecurity.securityConfigType = 'Requestmap'

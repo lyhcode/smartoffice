@@ -58,6 +58,11 @@ grails.project.dependency.resolution = {
 
         runtime ":database-migration:1.3.2"
 
+        // Spring Security Core
+        // The Spring Security plugin simplifies the integration
+        // of Spring Security (formerly Acegi Security) into Grails applications.
+        compile ":spring-security-core:1.2.7.3"
+
         compile ':cache:1.0.1'
     }
 }
